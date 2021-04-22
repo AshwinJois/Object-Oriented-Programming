@@ -44,11 +44,11 @@ class Network_layers(Dataset_Generation):
             )
         ]
                
-        try:      # For Custom Generated Data  
-            hist = self.model.fit(self.x, validation_data = self.y, epochs=29, callbacks=callbacks, shuffle=True) 
+        try:        
+            hist = self.model.fit(self.x, validation_data = self.y, epochs=29, callbacks=callbacks, shuffle=True) # For Custom Generated Data
         
-        except:   # For MNIST dataset
-            hist = self.model.fit(self.x, self.y, validation_data = (self.a, self.b),epochs = 30, callbacks=callbacks, shuffle=True)
+        except:   
+            hist = self.model.fit(self.x, self.y, validation_data = (self.a, self.b),epochs = 30, callbacks=callbacks, shuffle=True) # For MNIST dataset
         
         hist.history        
 
