@@ -8,8 +8,8 @@ Created on Wed Apr 21 14:53:29 2021
 import tensorflow as tf
 import sys
 sys.path.append('G:/ICS_Sylabus/Object_Oriented_Programming/repo_ai_application')
-from __try___ import Dataset_Generation
-from __try___ import Network_layers
+from Task_1 import Dataset_Generation
+from Task_1 import Network_layers
 
 mnist = tf.keras.datasets.mnist # 28x28 images of handwritten digits 0-9
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
