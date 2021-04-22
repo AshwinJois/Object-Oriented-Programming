@@ -37,7 +37,7 @@ class Network_layers(Dataset_Generation):
         
         callbacks = [tensorboard_callback,
             tf.keras.callbacks.ModelCheckpoint(
-                filepath='C:/Users/ashwi/OneDrive/Desktop/Travel March 2021/models',
+                filepath='G:/ICS_Sylabus/Object_Oriented_Programming/models',
                 save_best_only=True,  # Saves model if `loss` has improved.
                 monitor="loss",
                 verbose=1,
@@ -52,7 +52,7 @@ class Network_layers(Dataset_Generation):
         
         hist.history        
 
-        f = open('C:/Users/ashwi/OneDrive/Desktop/Travel March 2021/history.pckl', 'wb')
+        f = open('G:/ICS_Sylabus/Object_Oriented_Programming/history.pckl', 'wb')
         pickle.dump(hist.history, f)
         f.close()
         return
